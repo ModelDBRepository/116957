@@ -1,0 +1,15 @@
+To compile with GNU g++ type "make" (on unix-type systems).
+Compilation on other systems may vary. The code depends on STL lists and 
+vectors.
+
+After compilation data (almost) equivalent to figure 5A can be generated 
+by typing 
+"./testNT -6 1 8 NT &> NT.msg"
+(omitting " of course). This gives a bunch of ascii files 
+NT.-6.dat, NT.-5.dat, ... with two columns. The first column is time, the
+second column is the membrane potential of the soma.
+It also generates "NT.msg" containing the parameter values used.
+
+The only difference to the figure in the paper is a very low amplitude noise 
+(added in the paper but not in this code).
+ 
